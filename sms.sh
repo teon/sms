@@ -30,6 +30,11 @@ function check_arg() {
 # get modem number
 MODEMNO=$(mmcli -L | grep -o "Modem/[0-9]" | grep -o [0-9]$)
 
+if [[ -z "$MODEMNO" ]]; then
+    echo "ERROR: couldn't find any modem..."
+    exit 2
+fi
+
 case $1 in
 	"send")
 
