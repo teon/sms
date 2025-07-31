@@ -1,4 +1,3 @@
-I've searched in many places for such a tool but couldn't find one, so I wrote a quick and dirty Bash script to handle SMS messages using ModemManager.
 I have a failover setup for my main internet provider using an LTE modem. I've also found it very useful to have a mobile number available for sending SMS alerts when server errors occur, such as:
 
 - no internet connection — sending status updates about the failover
